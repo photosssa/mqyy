@@ -10,6 +10,7 @@
 #import "Data.h"
 
 @interface CategoriesViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *categoriesTable;
 -(void) fillData:(mqyyData*)data;
 @property(retain) UISegmentedControl* categoriesSegmentBtn;
 @property(strong, readonly) mqyyData* data;
@@ -18,11 +19,12 @@
 
 
 @interface CategoryTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *enterBtn;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *popularLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-
--(void)fillData:(mqyyCategory*) category;
+@property (retain) mqyyCategory* category;
+-(void)fillData:(mqyyCategory*)category;
 
 
 @end

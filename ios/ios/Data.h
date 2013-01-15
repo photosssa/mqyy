@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @interface mqyyData : NSObject
 {
@@ -19,9 +20,19 @@
 @interface mqyyCategory : NSObject
 @property(retain, readonly) NSString* name;
 @property(readonly)int popular;
+@property(retain, readonly) NSArray* programs;
+
+-(mqyyCategory*)initWithName:(NSString*)name popular:(int)popular programs:(NSArray*)programs;
+@end
 
 
--(mqyyCategory*)initWithName:(NSString*)name popular:(int)popular;
+
+@interface mqyyProgram : NSObject
+@property(retain, readonly) NSString* name;
+@property(readonly)int popular;
+@property(retain, readonly) mqyyUser* reader;
+
+-(mqyyProgram*)initWithName:(NSString*)name popular:(int)popular reader:(mqyyUser*)reader;
 @end
 
 

@@ -8,6 +8,7 @@
 
 #import "CategoriesViewController.h"
 #import "UITestData.h"
+#import "CategoryViewController.h"
 
 @interface CategoriesViewController ()
 {
@@ -16,7 +17,7 @@
 @end
 
 @implementation CategoriesViewController
-@synthesize data=_data;
+@synthesize data=_data,categoriesTable;
 
 -(void) fillData:(mqyyData*)data
 {
@@ -40,13 +41,26 @@
     float segBtnOffset = 5;
     [_categoriesSegmentBtn setFrame:CGRectMake(navItemFrame.origin.x - segBtnOffset, navItemFrame.origin.y - segBtnOffset, navItemFrame.size.width - 2 * segBtnOffset, navItemFrame.size.height - 2 * segBtnOffset)];
     _categoriesSegmentBtn.segmentedControlStyle = UISegmentedControlStyleBar;
-    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"ShowCategory"])
+    {
+        CategoryViewController* destCtrl = (CategoryViewController*)[segue destinationViewController];
+        
+        [destCtrl fillData:[self.data.categories objectAtIndex:[categoriesTable indexPathForSelectedRow].row]];
+        
+        UIBarButtonItem *temporaryBarButtonItem=[[UIBarButtonItem alloc] init];
+        temporaryBarButtonItem.title=@"分类";
+        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+    }
 }
 
 
@@ -66,7 +80,6 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
     [(CategoryTableViewCell*)cell fillData:[self.data.categories objectAtIndex: indexPath.item]];
-    
     return cell;
 }
 
@@ -98,25 +111,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
-        self.detailViewController.detailItem = object;
-    }
-     */
+    CategoryTableViewCell* cell = (CategoryTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
-    }
-     */
+    CategoryTableViewCell* cell = (CategoryTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
 }
-
 
 
 @end
@@ -124,13 +125,16 @@
 
 @implementation CategoryTableViewCell
 
-@synthesize contentLabel, titleLabel, popularLabel;
+@synthesize contentLabel, titleLabel, popularLabel,enterBtn,category;
 
--(void)fillData:(mqyyCategory*) category
+-(void)fillData:(mqyyCategory*)category;
 {
     titleLabel.text = category.name;
     popularLabel.text = [NSString stringWithFormat:@"%d", category.popular] ;
+    self.category = category;
 }
+
+
 
 @end
 

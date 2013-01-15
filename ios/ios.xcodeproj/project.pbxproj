@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20875BCE16A2D6110038BC83 /* UITestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 20875BCD16A2D6110038BC83 /* UITestData.m */; };
+		209EBBD116A58EC300FA1861 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBD016A58EC300FA1861 /* ContentViewController.m */; };
+		209EBBD516A5904000FA1861 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBD416A5904000FA1861 /* CategoryViewController.m */; };
+		209EBBE216A5A6F900FA1861 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBE116A5A6F900FA1861 /* User.m */; };
 		20A7FB7B1690B12E00B91AB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A7FB7A1690B12E00B91AB2 /* UIKit.framework */; };
 		20A7FB7D1690B12E00B91AB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A7FB7C1690B12E00B91AB2 /* Foundation.framework */; };
 		20A7FB7F1690B12E00B91AB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A7FB7E1690B12E00B91AB2 /* CoreGraphics.framework */; };
@@ -41,6 +44,12 @@
 /* Begin PBXFileReference section */
 		20875BCC16A2D6110038BC83 /* UITestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestData.h; sourceTree = "<group>"; };
 		20875BCD16A2D6110038BC83 /* UITestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestData.m; sourceTree = "<group>"; };
+		209EBBCF16A58EC300FA1861 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		209EBBD016A58EC300FA1861 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		209EBBD316A5904000FA1861 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		209EBBD416A5904000FA1861 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		209EBBE016A5A6F900FA1861 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		209EBBE116A5A6F900FA1861 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		20A7FB761690B12E00B91AB2 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A7FB7A1690B12E00B91AB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		20A7FB7C1690B12E00B91AB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +110,10 @@
 				20A7FB951690B12E00B91AB2 /* MainStoryboard_iPad.storyboard */,
 				20A7FB981690B12E00B91AB2 /* CategoriesViewController.h */,
 				20A7FB991690B12E00B91AB2 /* CategoriesViewController.m */,
+				209EBBCF16A58EC300FA1861 /* ContentViewController.h */,
+				209EBBD016A58EC300FA1861 /* ContentViewController.m */,
+				209EBBD316A5904000FA1861 /* CategoryViewController.h */,
+				209EBBD416A5904000FA1861 /* CategoryViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -185,6 +198,8 @@
 				20A7FBBE1690B48F00B91AB2 /* Data.mm */,
 				20875BCC16A2D6110038BC83 /* UITestData.h */,
 				20875BCD16A2D6110038BC83 /* UITestData.m */,
+				209EBBE016A5A6F900FA1861 /* User.h */,
+				209EBBE116A5A6F900FA1861 /* User.m */,
 			);
 			name = Kernel;
 			sourceTree = "<group>";
@@ -305,6 +320,9 @@
 				20A7FB9A1690B12E00B91AB2 /* CategoriesViewController.m in Sources */,
 				20A7FBBF1690B48F00B91AB2 /* Data.mm in Sources */,
 				20875BCE16A2D6110038BC83 /* UITestData.m in Sources */,
+				209EBBD116A58EC300FA1861 /* ContentViewController.m in Sources */,
+				209EBBD516A5904000FA1861 /* CategoryViewController.m in Sources */,
+				209EBBE216A5A6F900FA1861 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
