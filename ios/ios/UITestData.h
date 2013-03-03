@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Data.h"
+#import "mqyyServerStub.h"
 
 @interface UITestData : mqyyData
 -(UITestData*)init;
+@end
+
+@interface UITestDataStub : mqyyServerStub
+-(mqyyData*)syncGetData;
+-(mqyyCategory*)syncFillCategory:(mqyyCategory*)category;
+-(mqyyProgram*)syncFillProgram:(mqyyProgram *)program;
 @end

@@ -10,7 +10,9 @@
 
 @interface mqyyUser : NSObject
 @property(retain) NSString* name;
+@property(readonly) NSString* uid;
 
 -(mqyyUser*)initWithName:(NSString*)name;
+-(mqyyUser*)initWithId:(NSString*)uid;
 
 @end

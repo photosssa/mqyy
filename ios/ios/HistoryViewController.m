@@ -1,30 +1,20 @@
 //
-//  CategoryViewController.m
+//  HistoryViewController.m
 //  ios
 //
-//  Created by Tsukasa on 13-1-15.
+//  Created by Tsukasa on 13-2-5.
 //  Copyright (c) 2013年 Tsukasa. All rights reserved.
 //
 
-#import "CategoryViewController.h"
-#import "ContentViewController.h"
-#import "BriefViewController.h"
+#import "HistoryViewController.h"
+#import "CategoriesViewController.h"
 #import "mqyyClient.h"
 
-@interface CategoryViewController ()
-{
-    @private
-    mqyyCategory* _category;
-}
+@interface HistoryViewController ()
+
 @end
 
-@implementation CategoryViewController
-@synthesize category=_category;
-
--(void) fillData:(mqyyCategory*)category
-{
-    _category = category;
-}
+@implementation HistoryViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,7 +28,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = self.category.name;
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.hidesBackButton = YES;
+    [[CategoriesSegmentControl alloc] initWithController:self seg:CategoriesSegmentControlSegHistory];
+}
+
+-(void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,45 +54,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.category.programs.count;
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ContentCell";
-    ContentTableViewCell*cell = (ContentTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    [cell fillData:[self.category.programs objectAtIndex:indexPath.row]];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
     
     return cell;
 }
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"ShowProgram"]) {
-        ContentViewController* contentView = (ContentViewController*)[segue destinationViewController];
-        
-        mqyyProgram* curProgram = [self.category.programs objectAtIndex:[self.tableView indexPathForSelectedRow].row];
-        [contentView fillData: [mqyyClient.clientInstance.svrstub syncFillProgram:curProgram]];
-    }
-    else if([[segue identifier] isEqualToString:@"ShowBrief"])
-    {
-        BriefViewController* briefView = (BriefViewController*)[segue destinationViewController];
-        
-        mqyyProgram* curProgram = [self.category.programs objectAtIndex:[self.tableView indexPathForSelectedRow].row];
-        [briefView fillData:curProgram];
-    }
-}
-
-
 
 /*
 // Override to support conditional editing of the table view.
@@ -141,14 +134,4 @@
 
 @end
 
-@implementation ContentTableViewCell
-@synthesize nameLabel,popularLabel,sizeLabel,readerLabel;
--(void) fillData:(mqyyProgram*)program
-{
-    self.nameLabel.text = program.name;
-    self.readerLabel.text = program.reader.name;
-    self.popularLabel.text = [NSString stringWithFormat:@"%d", program.popular];
-    self.sizeLabel.text = [NSString stringWithFormat:@"%d", program.sections.count];
-}
 
-@end

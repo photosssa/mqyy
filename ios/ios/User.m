@@ -9,10 +9,20 @@
 #import "User.h"
 
 @implementation mqyyUser
-@synthesize name;
--(mqyyUser*)initWithName:(NSString*)name
 {
-    self.name = name;
+    @private
+    NSString* _id;
+}
+@synthesize name, uid=_id;
+-(mqyyUser*)initWithName:(NSString*)_name
+{
+    self.name = _name;
+    return self;
+}
+
+-(mqyyUser*)initWithId:(NSString*)uid
+{
+    _id = uid;
     return self;
 }
 @end

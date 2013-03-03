@@ -10,9 +10,12 @@
 
 @implementation AppDelegate
 
+@synthesize client;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    client = [[mqyyClient alloc]init];
     return YES;
 }
 							

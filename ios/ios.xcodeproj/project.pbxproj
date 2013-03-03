@@ -7,7 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2012316916B8AC45003DC1E5 /* PlayToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2012316816B8AC45003DC1E5 /* PlayToolbar.xib */; };
 		20875BCE16A2D6110038BC83 /* UITestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 20875BCD16A2D6110038BC83 /* UITestData.m */; };
+		20905F9016B898F30016784C /* ButtonNextNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20905F8B16B898F30016784C /* ButtonNextNormal.png */; };
+		20905F9116B898F30016784C /* ButtonPauseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20905F8C16B898F30016784C /* ButtonPauseNormal.png */; };
+		20905F9216B898F30016784C /* ButtonPlayNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20905F8D16B898F30016784C /* ButtonPlayNormal.png */; };
+		20905F9316B898F30016784C /* ButtonPreviousNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20905F8E16B898F30016784C /* ButtonPreviousNormal.png */; };
+		20905F9416B898F30016784C /* ButtonRecModeNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20905F8F16B898F30016784C /* ButtonRecModeNormal.png */; };
+		2096C5C416B3B61F00E6F400 /* BriefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096C5C316B3B61F00E6F400 /* BriefViewController.m */; };
+		2096C5CD16B3C95700E6F400 /* SectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2096C5CC16B3C95700E6F400 /* SectionCell.xib */; };
+		2096C5D116B4004000E6F400 /* mqyyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096C5D016B4004000E6F400 /* mqyyClient.m */; };
+		2096C5D316B44B1200E6F400 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2096C5D216B44B1200E6F400 /* AVFoundation.framework */; };
+		209877E316BCFD8A0005018D /* UserConformCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209877E216BCFD8A0005018D /* UserConformCell.xib */; };
+		209877E716BCFE760005018D /* PicStarFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877E516BCFE760005018D /* PicStarFull.png */; };
+		209877E816BCFE760005018D /* PicStarHalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877E616BCFE760005018D /* PicStarHalf.png */; };
+		209877EA16BD2B1E0005018D /* RecodeToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209877E916BD2B1E0005018D /* RecodeToolbar.xib */; };
+		209877EE16BD2D3C0005018D /* ButtonRecNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877EB16BD2D3C0005018D /* ButtonRecNormal.png */; };
+		209877EF16BD2D3C0005018D /* PicRecStatusRecing.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877EC16BD2D3C0005018D /* PicRecStatusRecing.png */; };
+		209877F016BD2D3C0005018D /* PicStarEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877ED16BD2D3C0005018D /* PicStarEmpty.png */; };
+		209877F316BFF8700005018D /* mqyyServerStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 209877F216BFF8700005018D /* mqyyServerStub.m */; };
+		209877F516C0E94A0005018D /* UserRate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209877F416C0E94A0005018D /* UserRate.xib */; };
+		209877FB16C0F7BA0005018D /* UserConformsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209877FA16C0F7B90005018D /* UserConformsViewController.m */; };
+		209877FE16C10BD90005018D /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209877FD16C10BD90005018D /* HistoryViewController.m */; };
+		2098780016C151170005018D /* ButtonFinishNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 209877FF16C151170005018D /* ButtonFinishNormal.png */; };
+		2098780316C1522D0005018D /* RecordeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098780216C1522D0005018D /* RecordeViewController.m */; };
 		209EBBD116A58EC300FA1861 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBD016A58EC300FA1861 /* ContentViewController.m */; };
 		209EBBD516A5904000FA1861 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBD416A5904000FA1861 /* CategoryViewController.m */; };
 		209EBBE216A5A6F900FA1861 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EBBE116A5A6F900FA1861 /* User.m */; };
@@ -42,8 +65,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2012316816B8AC45003DC1E5 /* PlayToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayToolbar.xib; sourceTree = "<group>"; };
 		20875BCC16A2D6110038BC83 /* UITestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestData.h; sourceTree = "<group>"; };
 		20875BCD16A2D6110038BC83 /* UITestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestData.m; sourceTree = "<group>"; };
+		20905F8B16B898F30016784C /* ButtonNextNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonNextNormal.png; sourceTree = "<group>"; };
+		20905F8C16B898F30016784C /* ButtonPauseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPauseNormal.png; sourceTree = "<group>"; };
+		20905F8D16B898F30016784C /* ButtonPlayNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlayNormal.png; sourceTree = "<group>"; };
+		20905F8E16B898F30016784C /* ButtonPreviousNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPreviousNormal.png; sourceTree = "<group>"; };
+		20905F8F16B898F30016784C /* ButtonRecModeNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRecModeNormal.png; sourceTree = "<group>"; };
+		2096C5C216B3B61F00E6F400 /* BriefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BriefViewController.h; sourceTree = "<group>"; };
+		2096C5C316B3B61F00E6F400 /* BriefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BriefViewController.m; sourceTree = "<group>"; };
+		2096C5CC16B3C95700E6F400 /* SectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionCell.xib; sourceTree = "<group>"; };
+		2096C5CF16B4004000E6F400 /* mqyyClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqyyClient.h; sourceTree = "<group>"; };
+		2096C5D016B4004000E6F400 /* mqyyClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mqyyClient.m; sourceTree = "<group>"; };
+		2096C5D216B44B1200E6F400 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = ../../../../../System/Library/Frameworks/AVFoundation.framework; sourceTree = "<group>"; };
+		209877E216BCFD8A0005018D /* UserConformCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserConformCell.xib; sourceTree = "<group>"; };
+		209877E516BCFE760005018D /* PicStarFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicStarFull.png; sourceTree = "<group>"; };
+		209877E616BCFE760005018D /* PicStarHalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicStarHalf.png; sourceTree = "<group>"; };
+		209877E916BD2B1E0005018D /* RecodeToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecodeToolbar.xib; sourceTree = "<group>"; };
+		209877EB16BD2D3C0005018D /* ButtonRecNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRecNormal.png; sourceTree = "<group>"; };
+		209877EC16BD2D3C0005018D /* PicRecStatusRecing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicRecStatusRecing.png; sourceTree = "<group>"; };
+		209877ED16BD2D3C0005018D /* PicStarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicStarEmpty.png; sourceTree = "<group>"; };
+		209877F116BFF8700005018D /* mqyyServerStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqyyServerStub.h; sourceTree = "<group>"; };
+		209877F216BFF8700005018D /* mqyyServerStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mqyyServerStub.m; sourceTree = "<group>"; };
+		209877F416C0E94A0005018D /* UserRate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRate.xib; sourceTree = "<group>"; };
+		209877F916C0F7B90005018D /* UserConformsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserConformsViewController.h; sourceTree = "<group>"; };
+		209877FA16C0F7B90005018D /* UserConformsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserConformsViewController.m; sourceTree = "<group>"; };
+		209877FC16C10BD80005018D /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		209877FD16C10BD90005018D /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		209877FF16C151170005018D /* ButtonFinishNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonFinishNormal.png; sourceTree = "<group>"; };
+		2098780116C1522D0005018D /* RecordeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordeViewController.h; sourceTree = "<group>"; };
+		2098780216C1522D0005018D /* RecordeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordeViewController.m; sourceTree = "<group>"; };
 		209EBBCF16A58EC300FA1861 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		209EBBD016A58EC300FA1861 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		209EBBD316A5904000FA1861 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -85,6 +137,7 @@
 				20A7FB7B1690B12E00B91AB2 /* UIKit.framework in Frameworks */,
 				20A7FB7D1690B12E00B91AB2 /* Foundation.framework in Frameworks */,
 				20A7FB7F1690B12E00B91AB2 /* CoreGraphics.framework in Frameworks */,
+				2096C5D316B44B1200E6F400 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +167,32 @@
 				209EBBD016A58EC300FA1861 /* ContentViewController.m */,
 				209EBBD316A5904000FA1861 /* CategoryViewController.h */,
 				209EBBD416A5904000FA1861 /* CategoryViewController.m */,
+				2096C5C216B3B61F00E6F400 /* BriefViewController.h */,
+				2096C5C316B3B61F00E6F400 /* BriefViewController.m */,
+				2096C5CC16B3C95700E6F400 /* SectionCell.xib */,
+				2012316816B8AC45003DC1E5 /* PlayToolbar.xib */,
+				209877E216BCFD8A0005018D /* UserConformCell.xib */,
+				209877F416C0E94A0005018D /* UserRate.xib */,
+				209877E916BD2B1E0005018D /* RecodeToolbar.xib */,
+				209877F916C0F7B90005018D /* UserConformsViewController.h */,
+				209877FA16C0F7B90005018D /* UserConformsViewController.m */,
+				209877FC16C10BD80005018D /* HistoryViewController.h */,
+				209877FD16C10BD90005018D /* HistoryViewController.m */,
+				2098780116C1522D0005018D /* RecordeViewController.h */,
+				2098780216C1522D0005018D /* RecordeViewController.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		2096C5CE16B3FC5E00E6F400 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				2096C5CF16B4004000E6F400 /* mqyyClient.h */,
+				2096C5D016B4004000E6F400 /* mqyyClient.m */,
+				209877F116BFF8700005018D /* mqyyServerStub.h */,
+				209877F216BFF8700005018D /* mqyyServerStub.m */,
+			);
+			name = Device;
 			sourceTree = "<group>";
 		};
 		20A7FB6B1690B12E00B91AB2 = {
@@ -140,6 +217,7 @@
 		20A7FB791690B12E00B91AB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2096C5D216B44B1200E6F400 /* AVFoundation.framework */,
 				20A7FB7A1690B12E00B91AB2 /* UIKit.framework */,
 				20A7FB7C1690B12E00B91AB2 /* Foundation.framework */,
 				20A7FB7E1690B12E00B91AB2 /* CoreGraphics.framework */,
@@ -151,6 +229,7 @@
 		20A7FB801690B12E00B91AB2 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				2096C5CE16B3FC5E00E6F400 /* Device */,
 				20875BCF16A2D6E80038BC83 /* UI */,
 				20A7FBBC1690B3E000B91AB2 /* Kernel */,
 				20A7FB811690B12E00B91AB2 /* Supporting Files */,
@@ -161,6 +240,17 @@
 		20A7FB811690B12E00B91AB2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				209877FF16C151170005018D /* ButtonFinishNormal.png */,
+				209877EB16BD2D3C0005018D /* ButtonRecNormal.png */,
+				209877EC16BD2D3C0005018D /* PicRecStatusRecing.png */,
+				209877ED16BD2D3C0005018D /* PicStarEmpty.png */,
+				209877E516BCFE760005018D /* PicStarFull.png */,
+				209877E616BCFE760005018D /* PicStarHalf.png */,
+				20905F8B16B898F30016784C /* ButtonNextNormal.png */,
+				20905F8C16B898F30016784C /* ButtonPauseNormal.png */,
+				20905F8D16B898F30016784C /* ButtonPlayNormal.png */,
+				20905F8E16B898F30016784C /* ButtonPreviousNormal.png */,
+				20905F8F16B898F30016784C /* ButtonRecModeNormal.png */,
 				20A7FB821690B12E00B91AB2 /* ios-Info.plist */,
 				20A7FB831690B12E00B91AB2 /* InfoPlist.strings */,
 				20A7FB861690B12E00B91AB2 /* main.m */,
@@ -281,6 +371,22 @@
 				20A7FB911690B12E00B91AB2 /* Default-568h@2x.png in Resources */,
 				20A7FB941690B12E00B91AB2 /* MainStoryboard_iPhone.storyboard in Resources */,
 				20A7FB971690B12E00B91AB2 /* MainStoryboard_iPad.storyboard in Resources */,
+				2096C5CD16B3C95700E6F400 /* SectionCell.xib in Resources */,
+				20905F9016B898F30016784C /* ButtonNextNormal.png in Resources */,
+				20905F9116B898F30016784C /* ButtonPauseNormal.png in Resources */,
+				20905F9216B898F30016784C /* ButtonPlayNormal.png in Resources */,
+				20905F9316B898F30016784C /* ButtonPreviousNormal.png in Resources */,
+				20905F9416B898F30016784C /* ButtonRecModeNormal.png in Resources */,
+				2012316916B8AC45003DC1E5 /* PlayToolbar.xib in Resources */,
+				209877E316BCFD8A0005018D /* UserConformCell.xib in Resources */,
+				209877E716BCFE760005018D /* PicStarFull.png in Resources */,
+				209877E816BCFE760005018D /* PicStarHalf.png in Resources */,
+				209877EA16BD2B1E0005018D /* RecodeToolbar.xib in Resources */,
+				209877EE16BD2D3C0005018D /* ButtonRecNormal.png in Resources */,
+				209877EF16BD2D3C0005018D /* PicRecStatusRecing.png in Resources */,
+				209877F016BD2D3C0005018D /* PicStarEmpty.png in Resources */,
+				209877F516C0E94A0005018D /* UserRate.xib in Resources */,
+				2098780016C151170005018D /* ButtonFinishNormal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +429,12 @@
 				209EBBD116A58EC300FA1861 /* ContentViewController.m in Sources */,
 				209EBBD516A5904000FA1861 /* CategoryViewController.m in Sources */,
 				209EBBE216A5A6F900FA1861 /* User.m in Sources */,
+				2096C5C416B3B61F00E6F400 /* BriefViewController.m in Sources */,
+				2096C5D116B4004000E6F400 /* mqyyClient.m in Sources */,
+				209877F316BFF8700005018D /* mqyyServerStub.m in Sources */,
+				209877FB16C0F7BA0005018D /* UserConformsViewController.m in Sources */,
+				209877FE16C10BD90005018D /* HistoryViewController.m in Sources */,
+				2098780316C1522D0005018D /* RecordeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

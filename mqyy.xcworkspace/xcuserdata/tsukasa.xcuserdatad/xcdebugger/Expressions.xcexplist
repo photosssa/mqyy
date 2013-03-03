@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CategoriesViewController tableView:numberOfRowsInSection:]:CategoriesViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[mqyyAudio playUrl:]:mqyyClient.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[mqyySection nextSection]:Data.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[CategoriesSegmentControl initWithController:seg:]:CategoriesViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserConformTableViewCell initWithCoder:]:ContentViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[mqyyServerStub syncNewSection:]:mqyyServerStub.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "section.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

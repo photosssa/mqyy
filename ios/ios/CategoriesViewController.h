@@ -28,3 +28,13 @@
 
 
 @end
+
+enum CategoriesSegmentControlSeg {
+    CategoriesSegmentControlSegHots = 0,
+    CategoriesSegmentControlSegCategories,
+    CategoriesSegmentControlSegHistory,
+};
+@interface CategoriesSegmentControl : UISegmentedControl
+-(CategoriesSegmentControl*)initWithController:(UIViewController*)controller seg:(enum CategoriesSegmentControlSeg)seg;
+-(void)segChanged;
+@end
